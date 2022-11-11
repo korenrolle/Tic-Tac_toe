@@ -1,0 +1,16 @@
+body {
+  background-color: aqua;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+.box:hover {
+  background-color: blue;
+opacity: 35%;
+}
+.row {
+display: flex;
+flex-direction: row;
+}
