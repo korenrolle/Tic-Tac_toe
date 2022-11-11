@@ -1,9 +1,23 @@
-// const rows = document.querySelectorAll('.box');
-// rowArr = [];
-// rows.forEach((row) => {
-//   rowArr.push(row);
-//   console.log(rowArr);
+const rows = document.querySelectorAll('.box');
+
+rows.forEach((row) => {
+  row.addEventListener('click', function ticTac(test) {
+    console.log('This works');
+  });
+});
+
+// rowsObj.addEventListener('click' test))
+// document.getElementBy('').addEventListener('click', function (test) {
+//   console.log('This works');
 // });
+// document.querySelectorAll(rows).addEventListener('click',
+
+// row.onClick = function ( {
+// test()
+// })
+// addEventListener;
+// console.log('This works');
+
 // function startGame() {
 //   let userChoice = prompt(
 //     'Would you like to continue the long lasting battle for the Alphabet Crown?',
@@ -14,24 +28,21 @@
 //   }
 // }
 
-let player = 1;
+// let player = 1;
 
-let currentChoice = [player1, player2];
-console.log(player1);
-// startGame();
-if
-function playGame() {
-  let player1 = ['1,3,5,7,9']
-  let player2 = ['2,4,6,8']
-  let setInterval(() => {
-    
-  }, interval);
+// let currentChoice = [player1, player2];
+// console.log(player1);
+// // startGame();
+// if
+// function playGame() {
+//   let player1 = [1, 3, 5, 7, 9]
+//   let player2 = [2,4,6,8]
 
-  }
-  // /if
-  
-  // for (let i = 1; i === rows.length; i++)
-  //   console.log(' Sorry bro..Already occupied');
+//   }
+//   // /if
+
+// for (let i = 1; i === rows.length; i++)
+//   console.log(' Sorry bro..Already occupied');
 // }
 // // function colorChange(emptySpace) {
 // for (let i = 1; i === rows.length; i++)
