@@ -8,9 +8,13 @@ body {
 }
 .box:hover {
   background-color: blue;
-opacity: 35%;
+  opacity: 35%;
 }
 .row {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  height: 75px;
+  width: 75px;
 }

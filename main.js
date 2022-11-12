@@ -1,8 +1,18 @@
 const rows = document.querySelectorAll('.box');
+const player1 = 'X';
+const player2 = 'O';
+let currentChoice = 1;
 
 rows.forEach((row) => {
   row.addEventListener('click', function ticTac(test) {
     console.log('This works');
+    if (currentChoice == 1) {
+      row.innerHTML = player1;
+      currentChoice = 2;
+    } else if ((currentChoice = 2)) {
+      row.innerHTML = player2;
+      currentChoice = 1;
+    }
   });
 });
 
