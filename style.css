@@ -18,6 +18,9 @@ body {
   height: 75px;
   width: 75px;
 }
-.noClick {
+.noClick1 {
 pointer-events: none;
 }
+.noClick2 {
+  pointer-events: none;
+  }
