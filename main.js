@@ -41,15 +41,21 @@ rowsArr.map((row, index) => {
   });
 });
 // let win = findWinner[i]
+function endGame() {
+  document.getElementById('endGame').className = 'endGame1';
+}
+function endGame2() {
+  document.getElementById('endGame').className = 'endGame2';
+}
 function win() {
   for (let i = 0; i < findWinner.length; i++) {
     let winner = findWinner[i];
     if (winner.every((win) => rowsArr[win].classList.contains('noClick1'))) {
-      console.log('Player1');
+      endGame();
     } else if (
       winner.every((win) => rowsArr[win].classList.contains('noClick2'))
     ) {
-      console.log('Player2');
+      endGame2();
     }
   }
 }
