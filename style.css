@@ -1,14 +1,19 @@
 body {
+  background-color: black;
   background-image: url(https://s-media-cache-ak0.pinimg.com/originals/5b/78/b2/5b78b2cb7bd1a2f057d2b0fab7ddaf47.gif);
   background-size:auto;
   background-position: center;
   background-repeat: no-repeat;
+  
+  
+
 
 
 }
 .board {
   display: flex;
   flex-direction: column;
+  
 }
 .box:hover {
   background-color: blue;
@@ -22,26 +27,47 @@ body {
   height: 75px;
   width: 75px;
   border: 2px dotted cornflowerblue;
-
-
-  
+  color: white;
 }
 .noClick1 {
+  height: 75px;
+  width: 75px;
+  border: 2px dotted cornflowerblue;
 pointer-events: none;
+color: white;
 }
 .noClick2 {
+  height: 75px;
+  width: 75px;
+  border: 2px dotted cornflowerblue;
   pointer-events: none;
+  color: white;
   }
 .endGame1 {
+  height: 75px;
+  width: 75px;
+  border: 2px dotted cornflowerblue;
   pointer-events: none;
-  margin-left: 50%;
+  /* margin-left: 50%; */
+  color: white;
 }
-.endGame2 {
-  pointer-events: none;
-  margin-left: 50%;
-}
+/* .endGame2 {
+  height: 75px;
+  width: 75px;
+  border: 2px dotted cornflowerblue;
+  pointer-events: none; */
+  /* margin-left: 50%; */
+  /* color: white;
+} */
 .spacing {
   display: flex;
   justify-content: center;
-  text-align: center;
+  /* text-align: center; */
+  /* color: white; */
 }
+/* 
+#endGame{
+  width: 75px;
+  height: 75px;
+  border: 2px dotted cornflowerblue;
+} */

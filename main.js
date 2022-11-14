@@ -15,6 +15,7 @@ const findWinner = [
   [0, 4, 8],
   [6, 4, 2]
 ];
+
 // const compareFn = (winner1, findWinner) => {
 //   return JSON.stringify(winner1) === JSON.stringify(findWinner);
 // };
@@ -41,21 +42,25 @@ rowsArr.map((row, index) => {
   });
 });
 // let win = findWinner[i]
-function endGame() {
+function endGame1() {
   document.getElementById('endGame').className = 'endGame1';
+  console.log('game end 1');
 }
-function endGame2() {
-  document.getElementById('endGame').className = 'endGame2';
-}
+// function endGame2() {
+//   document.getElementById('endGame').className = 'endGame2';
+//   console.log('game end 2');
+// }
 function win() {
   for (let i = 0; i < findWinner.length; i++) {
     let winner = findWinner[i];
     if (winner.every((win) => rowsArr[win].classList.contains('noClick1'))) {
-      endGame();
+      console.log('player 1 wins');
+      endGame1();
     } else if (
       winner.every((win) => rowsArr[win].classList.contains('noClick2'))
     ) {
-      endGame2();
+      console.log('player 2 wins');
+      endGame1();
     }
   }
 }
