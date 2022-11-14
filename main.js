@@ -55,9 +55,13 @@ function win() {
       console.log('player 2 wins');
       winnerDisplay.innerHTML = 'Player 2 Wins';
       endGame1();
+    } else if (winner1.length === 4 || winner2.length === 4) {
+      winnerDisplay.innerHTML = 'Its a draw';
+      endGame1();
     }
   }
 }
+
 function refresh() {
   window.location.reload();
 }
