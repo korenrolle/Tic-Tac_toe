@@ -1,4 +1,5 @@
 const rows = document.querySelectorAll('.box');
+const winnerDisplay = document.getElementById('win');
 const rowsArr = Array.from(rows);
 const player1 = 'X';
 const player2 = 'O';
@@ -26,7 +27,6 @@ rowsArr.map((row, index) => {
     if (currentChoice == 1) {
       row.className = 'noClick1';
       row.innerHTML = player1;
-
       win();
       currentChoice = 2;
       winner1.push(index);
@@ -55,11 +55,13 @@ function win() {
     let winner = findWinner[i];
     if (winner.every((win) => rowsArr[win].classList.contains('noClick1'))) {
       console.log('player 1 wins');
+      winnerDisplay.innerHTML = 'Player 1 Wins';
       endGame1();
     } else if (
       winner.every((win) => rowsArr[win].classList.contains('noClick2'))
     ) {
       console.log('player 2 wins');
+      winnerDisplay.innerHTML = 'Player 2 Wins';
       endGame1();
     }
   }
