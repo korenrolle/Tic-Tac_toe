@@ -1,10 +1,14 @@
 body {
-  background-color: aqua;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/5b/78/b2/5b78b2cb7bd1a2f057d2b0fab7ddaf47.gif);
+  background-size:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
 }
 .board {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
 }
 .box:hover {
   background-color: blue;
@@ -17,6 +21,10 @@ body {
 .box {
   height: 75px;
   width: 75px;
+  border: 2px dotted cornflowerblue;
+
+
+  
 }
 .noClick1 {
 pointer-events: none;
@@ -26,7 +34,14 @@ pointer-events: none;
   }
 .endGame1 {
   pointer-events: none;
+  margin-left: 50%;
 }
 .endGame2 {
   pointer-events: none;
+  margin-left: 50%;
+}
+.spacing {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }

@@ -59,6 +59,9 @@ function win() {
     }
   }
 }
+function refresh() {
+  window.location.reload();
+}
 
 // if((...win)==(...winner1)){console.log("Finally")}
 // function compareFn(winner1, winner2) {
