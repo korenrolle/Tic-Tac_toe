@@ -8,6 +8,7 @@ body {
 .board {
   display: flex;  
   flex-direction: column;
+  position: fixed;
   
 }
 .box:hover {
@@ -30,6 +31,7 @@ body {
   border: 2px dotted cornflowerblue;
 pointer-events: none;
 color: white;
+
 }
 .noClick2 {
   height: 75px;
@@ -37,6 +39,7 @@ color: white;
   border: 2px dotted cornflowerblue;
   pointer-events: none;
   color: white;
+  position: fixed;
   }
 .endGame1 {
   height: 75px;
@@ -44,6 +47,7 @@ color: white;
   border: 2px dotted cornflowerblue;
   pointer-events: none;
   color: white;
+  position: fixed;
 }
 
 .spacing {
