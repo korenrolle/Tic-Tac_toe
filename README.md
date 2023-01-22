@@ -12,7 +12,7 @@ PSEUDO CODE
   - Check for a win, if a winner is found return the winner's symbol
   - If no winner is found, check if the board is full, if so return "Tie"
 
-##USERSTORIES
+# USERSTORIES
 
 As a player, I want to be able to make a move on the game board so that I can play the game.
 As a player, I want to see if I have won the game so that I know when the game is over.
