@@ -12,7 +12,7 @@ PSEUDO CODE
   - Check for a win, if a winner is found return the winner's symbol
   - If no winner is found, check if the board is full, if so return "Tie"
 
-#USERSTORIES
+##USERSTORIES
 
 As a player, I want to be able to make a move on the game board so that I can play the game.
 As a player, I want to see if I have won the game so that I know when the game is over.
@@ -24,6 +24,8 @@ As a player, I want to be able to play against an AI so that I can have a challe
 As a player, I want to be able to customize the game board size so that I can play different variations of the game.
 As a player, I want to be able to choose my symbol so that I can personalize my game experience.
 As a player, I want to be able to save my game progress so that I can resume the game later.
+
+WIREFRAME
 
 ![tictactoe](https://user-images.githubusercontent.com/115126618/213927727-fb9bc7a0-6614-4b40-a318-629956d9dea0.png)
 
