@@ -1,63 +1,55 @@
-body {
-  background-color: black;
-  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/5b/78/b2/5b78b2cb7bd1a2f057d2b0fab7ddaf47.gif);
-  background-size:auto;
-  background-position: center
-  background-repeat: no-repeat;
+*{
+  background-color: bisque;
 }
-.board {
-  display: flex;  
-  flex-direction: column;
-  
-}
-.box:hover {
-  background-color: blue;
-  opacity: 35%;
-}
-.row {
-  display: flex;
-  flex-direction: row;
-}
-.box {
-  height: 75px;
-  width: 75px;
-  border: 2px dotted cornflowerblue;
-  color: white;
-}
-.noClick1 {
-  height: 75px;
-  width: 75px;
-  border: 2px dotted cornflowerblue;
-pointer-events: none;
-color: white;
-
-}
-.noClick2 {
-  height: 75px;
-  width: 75px;
-  border: 2px dotted cornflowerblue;
-  pointer-events: none;
-  color: white;
-  }
-.endGame1 {
-  height: 75px;
-  width: 75px;
-  border: 2px dotted cornflowerblue;
-  pointer-events: none;
-  color: white;
-}
-
-.spacing {
+.board-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-#win{
-  color: white;
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
 }
-h1 {
-  color: aliceblue;
+
+.row {
+  display: flex;
+  width: 100%;
 }
-h2 {
-  color: aliceblue;
+
+/* reset the box styles */
+.box {
+  background-color: white;
+  border: 1px solid black;
+  height: 98px; /* adjust as needed */
+  width: 98px; /* adjust as needed */
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* change the background color of the box when clicked */
+.noClick1 {
+  background-color: #ff0000; /* adjust as needed */
+}
+
+.noClick2 {
+  background-color: #00ff00; /* adjust as needed */
+}
+
+.box.clicked {
+  background-color: #f00;
+}
+
+.endGame1 {
+  background-color: #f00;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
